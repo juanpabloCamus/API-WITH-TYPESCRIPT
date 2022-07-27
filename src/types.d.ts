@@ -17,3 +17,5 @@ export interface DiaryEntry {
     }        I
 */
 //Si es algo que se va a quedar mas fijo es mejor usar types
+
+export type NonSensitiveInfoDiaryEntry = Omit<DiaryEntry, 'comment'>
